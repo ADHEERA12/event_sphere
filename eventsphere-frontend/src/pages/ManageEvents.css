@@ -1,0 +1,237 @@
+/* Manage Events Page Styles */
+
+.manage-events-page {
+  padding: 40px 6%;
+  min-height: 100vh;
+  background: #f8f9fc;
+}
+
+.manage-events-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.manage-events-header h1 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #1a1a24;
+  margin-bottom: 6px;
+}
+
+.manage-events-header p {
+  color: #666677;
+  font-size: 15px;
+  margin: 0;
+}
+
+.add-event-btn {
+  background: linear-gradient(135deg, #712420 0%, #8c2d27 100%);
+  color: #ffffff;
+  border: none;
+  padding: 13px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14.5px;
+  box-shadow: 0 4px 14px rgba(113, 36, 32, 0.3);
+  transition: all 0.25s ease;
+}
+
+.add-event-btn:hover {
+  background: linear-gradient(135deg, #882b25 0%, #a4342d 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(113, 36, 32, 0.4);
+}
+
+.events-controls {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.events-controls input,
+.events-controls select {
+  padding: 13px 16px;
+  border: 1.5px solid #e2e2ec;
+  border-radius: 10px;
+  background: #ffffff;
+  font-size: 14px;
+  color: #222230;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.events-controls input {
+  flex: 1;
+}
+
+.events-controls input:focus,
+.events-controls select:focus {
+  border-color: #712420;
+  box-shadow: 0 0 0 3px rgba(113, 36, 32, 0.1);
+}
+
+.events-table-wrapper {
+  overflow-x: auto;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e9e9f0;
+}
+
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 850px;
+}
+
+.events-table th {
+  background: #f8f8fc;
+  color: #4b4b5e;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 16px 18px;
+  text-align: left;
+  border-bottom: 1.5px solid #eaeaf2;
+}
+
+.events-table td {
+  padding: 16px 18px;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f5;
+  font-size: 14px;
+  color: #333340;
+  vertical-align: middle;
+}
+
+.events-table tr:last-child td {
+  border-bottom: none;
+}
+
+.events-table tr:hover td {
+  background-color: #fafafc;
+}
+
+.event-cat-tag {
+  background: #f0f0f5;
+  color: #444455;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.seats-count {
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status-badge.published {
+  background: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #c8e6c9;
+}
+
+.status-badge.draft {
+  background: #fff8e1;
+  color: #b78103;
+  border: 1px solid #ffecb3;
+}
+
+/* ==========================================================================
+   Action Buttons (Pills)
+   ========================================================================== */
+
+.table-actions-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-pill {
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+}
+
+/* Unpublish Pill */
+.unpublish-pill {
+  background: #fffbeb;
+  color: #b45309;
+  border: 1px solid #fde68a;
+}
+
+.unpublish-pill:hover {
+  background: #fef3c7;
+  color: #92400e;
+  border-color: #fcd34d;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(245, 158, 11, 0.2);
+}
+
+/* Publish Pill */
+.publish-pill {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+.publish-pill:hover {
+  background: #d1fae5;
+  color: #065f46;
+  border-color: #6ee7b7;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(16, 185, 129, 0.2);
+}
+
+/* Delete Pill */
+.delete-pill {
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+.delete-pill:hover {
+  background: #fee2e2;
+  color: #b91c1c;
+  border-color: #fca5a5;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(239, 68, 68, 0.25);
+}
+
+@media (max-width: 768px) {
+  .manage-events-page {
+    padding: 20px 4%;
+  }
+
+  .manage-events-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .events-controls {
+    flex-direction: column;
+  }
+}

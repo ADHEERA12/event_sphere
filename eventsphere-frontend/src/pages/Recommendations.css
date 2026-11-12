@@ -1,0 +1,158 @@
+.recommendations-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f8f9fc;
+}
+
+.recommendations-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.ai-label {
+  display: inline-block;
+  color: #712420;
+  background: #f4e8e6;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.recommendations-header h1 {
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.recommendations-header p {
+  color: #777;
+}
+
+.interests-section {
+  max-width: 850px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.interests-section h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.interest-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.interest-chip {
+  padding: 11px 17px;
+  border: 1px solid #ddd;
+  background: white;
+  color: #555;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.interest-chip.selected {
+  background: #712420;
+  color: white;
+  border-color: #712420;
+}
+
+.recommend-btn {
+  margin-top: 25px;
+  padding: 13px 22px;
+  background: #712420;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.recommend-btn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.recommended-section {
+  margin-top: 40px;
+}
+
+.recommended-section h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.recommended-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.recommended-card {
+  background: white;
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.match-label {
+  color: #18833b;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.recommended-card h3 {
+  margin: 15px 0 10px;
+  color: #333;
+}
+
+.recommended-card p {
+  margin: 9px 0;
+  color: #777;
+}
+
+.recommended-card .recommended-price {
+  color: #712420;
+}
+
+.recommendation-reason {
+  margin-top: 18px;
+  padding: 13px;
+  background: #f8f9fc;
+  border-radius: 7px;
+}
+
+.recommendation-reason strong {
+  color: #712420;
+}
+
+.no-recommendations {
+  color: #777;
+  padding: 20px 0;
+}
+
+@media (max-width: 900px) {
+  .recommended-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .recommendations-page {
+    padding: 20px;
+  }
+
+  .recommended-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .interests-section {
+    padding: 20px;
+  }
+}
