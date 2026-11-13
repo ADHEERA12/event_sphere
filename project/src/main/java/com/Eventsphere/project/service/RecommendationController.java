@@ -12,7 +12,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/recommendations")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://eventsphere-beta-three.vercel.app"
+})
 public class RecommendationController {
 
     private final RecommendationService recommendationService;
