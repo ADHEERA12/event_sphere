@@ -77,7 +77,7 @@ function Login() {
 
           <div className="auth-group">
             <label>Password</label>
-            <input
+            <input.password
               type="password"
               placeholder="Enter your password"
               value={password}
@@ -92,7 +92,7 @@ function Login() {
               Remember me
             </label>
 
-            <Link to="/forgot-password">Forgot Password?</Link>
+            
           </div>
 
           <button type="submit" className="auth-submit" disabled={loading}>

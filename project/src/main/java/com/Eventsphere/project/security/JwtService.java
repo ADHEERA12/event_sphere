@@ -23,14 +23,22 @@ public class JwtService {
     }
 
     public String generateToken(String email) {
+    return generateToken(email, false);
+}
 
-        return Jwts.builder()
-                .subject(email)
-                .issuedAt(new Date())
-                .expiration(new Date(System.currentTimeMillis() + 86400000))
-                .signWith(key)
-                .compact();
-    }
+public String generateToken(String email, boolean rememberMe) {
+
+    long expirationTime = rememberMe
+            ? 7L * 24 * 60 * 60 * 1000
+            : 24L * 60 * 60 * 1000;
+
+    return Jwts.builder()
+            .subject(email)
+            .issuedAt(new Date())
+            .expiration(new Date(System.currentTimeMillis() + expirationTime))
+            .signWith(key)
+            .compact();
+}
 
     public String extractEmail(String token) {
 

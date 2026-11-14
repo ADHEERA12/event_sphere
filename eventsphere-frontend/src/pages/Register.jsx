@@ -104,7 +104,7 @@ function Register() {
 
           <div className="register-group">
             <label>Password</label>
-            <input
+            <input.password
               type="password"
               name="password"
               placeholder="Create a password"
@@ -117,7 +117,7 @@ function Register() {
 
           <div className="register-group">
             <label>Confirm Password</label>
-            <input
+            <input.password
               type="password"
               name="confirmPassword"
               placeholder="Confirm your password"
