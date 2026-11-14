@@ -77,7 +77,7 @@ function Login() {
 
           <div className="auth-group">
             <label>Password</label>
-            <input.password
+            <input
               type="password"
               placeholder="Enter your password"
               value={password}
